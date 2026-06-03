@@ -912,11 +912,11 @@ button { cursor: pointer; font-family: inherit; }
     </div>
   </div>
   <div class="hero-right">
-    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=900&h=1200&fit=crop" alt="Propiedad de lujo en San Rafael, Mendoza">
+    <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=900&h=1200&fit=crop" alt="Casa familiar en San Rafael, Mendoza">
     <div class="hero-img-overlay"></div>
     <div class="hero-img-badge">
       <p>Destacado del mes</p>
-      <strong>Casa Barrio Los Álamos</strong>
+      <strong>Casa 3 amb. · Barrio Belgrano</strong>
     </div>
   </div>
   <div class="scroll-cue">Explorar</div>
@@ -1194,19 +1194,84 @@ button { cursor: pointer; font-family: inherit; }
 <script>
 // ===== DATA =====
 const properties = [
-  { id:1, tipo:"casa", operacion:"venta", nombre:"Casa en Barrio Privado Los Álamos", ubicacion:"San Rafael, Mendoza", precio:185000, moneda:"USD", m2:220, habitaciones:3, banos:2, cochera:2, desc:"Excelente casa en barrio cerrado Los Álamos, con jardín, parrilla, quincho y amplios espacios. Ideal para familia.", img:"https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&h=400&fit=crop", linkWA:"https://wa.me/5492604300996?text=Hola%2C%20estoy%20interesado%20en%20la%20propiedad%3A%20Casa%20en%20Barrio%20Privado%20Los%20%C3%81lamos%20(San%20Rafael)" },
-  { id:2, tipo:"departamento", operacion:"venta", nombre:"Departamento frente al Parque", ubicacion:"San Rafael Centro", precio:89000, moneda:"USD", m2:78, habitaciones:2, banos:1, cochera:1, desc:"Moderno departamento en pleno centro, con vista al parque, cerca de comercios y servicios. Balcón y excelente iluminación.", img:"https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=600&h=400&fit=crop", linkWA:"https://wa.me/5492604300996?text=Hola%2C%20estoy%20interesado%20en%20el%20departamento%20frente%20al%20parque%20(San%20Rafael)" },
-  { id:3, tipo:"casa", operacion:"alquiler", nombre:"Casa con pileta y parrilla", ubicacion:"San Rafael, Mendoza", precio:550, moneda:"USD/mes", m2:150, habitaciones:3, banos:2, cochera:1, desc:"Excelente casa en zona residencial, con pileta, parrilla y cochera cubierta. Acepta mascotas.", img:"https://images.unsplash.com/photo-1600047508788-786f3865b5a2?w=600&h=400&fit=crop", linkWA:"https://wa.me/5492604300996?text=Hola%2C%20estoy%20interesado%20en%20alquilar%20la%20casa%20con%20pileta%20y%20parrilla" },
-  { id:4, tipo:"terreno", operacion:"venta", nombre:"Terreno en Zona Norte (Vista al Cerro)", ubicacion:"San Rafael Norte", precio:42000, moneda:"USD", m2:1200, habitaciones:0, banos:0, cochera:0, desc:"Terreno de 1200 m² en zona de crecimiento, con vista a la montaña. Ideal para construir casa o inversión.", img:"https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=600&h=400&fit=crop", linkWA:"https://wa.me/5492604300996?text=Hola%2C%20estoy%20interesado%20en%20el%20terreno%20en%20San%20Rafael%20Norte" },
-  { id:5, tipo:"departamento", operacion:"alquiler", nombre:"Monoambiente amueblado con amenities", ubicacion:"San Rafael Centro", precio:280, moneda:"USD/mes", m2:45, habitaciones:1, banos:1, cochera:0, desc:"Monoambiente completamente amueblado, con pileta, SUM y seguridad. Ideal para estudiantes o profesionales.", img:"https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=600&h=400&fit=crop", linkWA:"https://wa.me/5492604300996?text=Hola%2C%20estoy%20interesado%20en%20el%20monoambiente%20amueblado%20con%20amenities" }
+  {
+    id:1, tipo:"casa", operacion:"venta",
+    nombre:"Casa 3 dormitorios con patio y cochera",
+    ubicacion:"Barrio Gral. Belgrano, San Rafael",
+    precio:72000, moneda:"USD", m2:110, habitaciones:3, banos:1, cochera:1,
+    desc:"Casa familiar en barrio residencial consolidado. Living-comedor, cocina con alacena, 3 dormitorios, baño completo, patio con parrilla y cochera cubierta. Gas natural, agua corriente. A 5 cuadras de escuela primaria y almacén.",
+    img:"https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=600&h=400&fit=crop",
+    linkWA:"https://wa.me/5492604300996?text=Hola%2C%20me%20interesa%20la%20casa%20en%20Barrio%20Belgrano%20(San%20Rafael)"
+  },
+  {
+    id:2, tipo:"departamento", operacion:"venta",
+    nombre:"Departamento 2 dormitorios, planta baja",
+    ubicacion:"San Rafael Centro",
+    precio:52000, moneda:"USD", m2:68, habitaciones:2, banos:1, cochera:1,
+    desc:"Departamento en planta baja con patio propio. Living-comedor, cocina independiente, 2 dormitorios, baño. Cochera descubierta. A media cuadra de la peatonal San Martín. Expensas bajas.",
+    img:"https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=600&h=400&fit=crop",
+    linkWA:"https://wa.me/5492604300996?text=Hola%2C%20me%20interesa%20el%20departamento%20PB%20en%20centro%20San%20Rafael"
+  },
+  {
+    id:3, tipo:"casa", operacion:"alquiler",
+    nombre:"Casa 3 dormitorios con galería y parrilla",
+    ubicacion:"Barrio El Palmar, San Rafael",
+    precio:320, moneda:"USD/mes", m2:120, habitaciones:3, banos:1, cochera:1,
+    desc:"Casa de barrio con galería cubierta, parrilla, patio amplio y cochera. 3 dormitorios, living-comedor, cocina. Zona tranquila a 8 cuadras del centro. Acepta mascotas.",
+    img:"https://images.unsplash.com/photo-1523217582562-09d0def993a6?w=600&h=400&fit=crop",
+    linkWA:"https://wa.me/5492604300996?text=Hola%2C%20me%20interesa%20el%20alquiler%20de%20casa%20en%20El%20Palmar%20San%20Rafael"
+  },
+  {
+    id:4, tipo:"terreno", operacion:"venta",
+    nombre:"Lote 600 m² con todos los servicios",
+    ubicacion:"Barrio Los Reyunos, San Rafael",
+    precio:16000, moneda:"USD", m2:600, habitaciones:0, banos:0, cochera:0,
+    desc:"Lote de 600 m² en barrio con calles asfaltadas, agua corriente, luz trifásica y gas natural. Escritura lista para transferir. Zona en crecimiento, ideal para construir la casa propia.",
+    img:"https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=600&h=400&fit=crop",
+    linkWA:"https://wa.me/5492604300996?text=Hola%2C%20me%20interesa%20el%20lote%20en%20Los%20Reyunos%20San%20Rafael"
+  },
+  {
+    id:5, tipo:"departamento", operacion:"alquiler",
+    nombre:"Monoambiente con balcón, 3er piso",
+    ubicacion:"San Rafael Centro",
+    precio:170, moneda:"USD/mes", m2:38, habitaciones:1, banos:1, cochera:0,
+    desc:"Monoambiente luminoso en 3er piso con ascensor y balcón. Cocina equipada con heladera, anafe y lavarropas. Edificio con portero eléctrico. Ideal para persona sola o pareja.",
+    img:"https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=600&h=400&fit=crop",
+    linkWA:"https://wa.me/5492604300996?text=Hola%2C%20me%20interesa%20el%20monoambiente%20en%20centro%20San%20Rafael"
+  }
 ];
 
 const cars = [
-  { id:1, tipo:"sedan", marca:"Toyota", modelo:"Corolla", año:2021, km:45000, precio:18900, moneda:"USD", desc:"Corolla XEI 2.0, automático, cuero, muy bien cuidado. Único dueño. Ideal para la ruta.", img:"https://images.unsplash.com/photo-1623869675786-2d25c6e4d2e5?w=600&h=400&fit=crop", linkWA:"https://wa.me/5492604300996?text=Hola%2C%20estoy%20interesado%20en%20el%20Toyota%20Corolla%202021" },
-  { id:2, tipo:"suv", marca:"Ford", modelo:"EcoSport", año:2022, km:28000, precio:22500, moneda:"USD", desc:"EcoSport Titanium 1.5, full equipo, techo solar, muy cuidada. Perfecta para familia.", img:"https://images.unsplash.com/photo-1580274455191-1c62238fa333?w=600&h=400&fit=crop", linkWA:"https://wa.me/5492604300996?text=Hola%2C%20estoy%20interesado%20en%20la%20Ford%20EcoSport%202022" },
-  { id:3, tipo:"pickup", marca:"Volkswagen", modelo:"Amarok", año:2020, km:62000, precio:32500, moneda:"USD", desc:"Amarok V6 3.0, 4x4, caja automática, ideal para trabajo o aventura en la montaña. Muy potente.", img:"https://images.unsplash.com/photo-1580274455191-1c62238fa333?w=600&h=400&fit=crop", linkWA:"https://wa.me/5492604300996?text=Hola%2C%20estoy%20interesado%20en%20la%20Volkswagen%20Amarok%202020" },
-  { id:4, tipo:"sedan", marca:"Honda", modelo:"Civic", año:2023, km:15000, precio:27900, moneda:"USD", desc:"Civic EX-T, turbo, muy bajo kilometraje, garantía vigente. Diseño deportivo y económico.", img:"https://images.unsplash.com/photo-1593432676799-5c8f7dd3b6c9?w=600&h=400&fit=crop", linkWA:"https://wa.me/5492604300996?text=Hola%2C%20estoy%20interesado%20en%20el%20Honda%20Civic%202023" },
-  { id:5, tipo:"suv", marca:"Chevrolet", modelo:"Tracker", año:2022, km:32000, precio:20800, moneda:"USD", desc:"Tracker LTZ 1.2, pantalla, cámara, muy económica. SUV compacta ideal para ciudad y ruta.", img:"https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?w=600&h=400&fit=crop", linkWA:"https://wa.me/5492604300996?text=Hola%2C%20estoy%20interesado%20en%20la%20Chevrolet%20Tracker%202022" }
+  {
+    id:1, tipo:"sedan", marca:"Fiat", modelo:"Cronos", año:2022, km:38000, precio:10500, moneda:"USD",
+    desc:"Cronos Drive 1.3 nafta, 4 puertas, A/C, dirección asistida, cierre centralizado, alzavidrios eléctricos. Un solo dueño, siempre en taller oficial Fiat. Papeles al día, apto transferir.",
+    img:"https://images.unsplash.com/photo-1609521263047-f8f205293f24?w=600&h=400&fit=crop",
+    linkWA:"https://wa.me/5492604300996?text=Hola%2C%20me%20interesa%20el%20Fiat%20Cronos%202022"
+  },
+  {
+    id:2, tipo:"sedan", marca:"Volkswagen", modelo:"Gol Trend", año:2018, km:78000, precio:6800, moneda:"USD",
+    desc:"Gol Trend 5 puertas, 1.6 nafta. A/C, radio, cierre centralizado. Motor y caja en perfecto estado. Cubiertas nuevas. Buena para segunda familia o primer auto.",
+    img:"https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?w=600&h=400&fit=crop",
+    linkWA:"https://wa.me/5492604300996?text=Hola%2C%20me%20interesa%20el%20VW%20Gol%20Trend%202018"
+  },
+  {
+    id:3, tipo:"pickup", marca:"Ford", modelo:"Ranger XLS", año:2019, km:92000, precio:23500, moneda:"USD",
+    desc:"Ranger XLS 2.2 diesel, cabina doble, 4x2, caja manual. Uso mixto ciudad/campo. Motor en perfecto estado. Muy buscada para fincas y trabajo rural en la zona.",
+    img:"https://images.unsplash.com/photo-1558618047-f4e70ac0ef76?w=600&h=400&fit=crop",
+    linkWA:"https://wa.me/5492604300996?text=Hola%2C%20me%20interesa%20la%20Ford%20Ranger%202019"
+  },
+  {
+    id:4, tipo:"sedan", marca:"Renault", modelo:"Logan", año:2020, km:55000, precio:8200, moneda:"USD",
+    desc:"Logan Life 1.6 nafta, 4 puertas, baúl 510 litros. A/C, elevavidrios, radio bluetooth. El sedán familiar más espacioso y económico. Ideal para viajes San Rafael–Mendoza.",
+    img:"https://images.unsplash.com/photo-1502877338535-766e1452684a?w=600&h=400&fit=crop",
+    linkWA:"https://wa.me/5492604300996?text=Hola%2C%20me%20interesa%20el%20Renault%20Logan%202020"
+  },
+  {
+    id:5, tipo:"suv", marca:"Chevrolet", modelo:"Tracker", año:2021, km:48000, precio:16900, moneda:"USD",
+    desc:"Tracker LT 1.2 turbo nafta, pantalla táctil 8\", cámara de retroceso, sensores de estacionamiento. La SUV compacta más vendida de Argentina. Muy económica en nafta.",
+    img:"https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=600&h=400&fit=crop",
+    linkWA:"https://wa.me/5492604300996?text=Hola%2C%20me%20interesa%20la%20Chevrolet%20Tracker%202021"
+  }
 ];
 
 const testimonials = [
