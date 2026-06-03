@@ -377,17 +377,14 @@ button { cursor: pointer; font-family: inherit; }
 
 /* ===== SEARCH CARD ===== */
 .search-section {
-  margin-top: 0;
-  padding: 0 0 48px 0;
+  margin-top: -64px;
   position: relative; z-index: 10;
-  background: var(--cream);
 }
 .search-card {
   background: var(--white);
   border-radius: var(--r-xl);
-  box-shadow: 0 8px 32px rgba(13,27,42,0.08), 0 2px 0 var(--gold) inset;
-  padding: 32px 36px;
-  margin-top: -2px;
+  box-shadow: 0 20px 60px rgba(13,27,42,0.1), 0 2px 0 var(--gold) inset;
+  padding: 36px 40px;
 }
 .search-heading {
   font-family: var(--font-serif);
@@ -808,22 +805,37 @@ button { cursor: pointer; font-family: inherit; }
 }
 @media (max-width: 768px) {
   .hero { grid-template-columns: 1fr; min-height: auto; }
-  .hero-left { padding: 120px 24px 60px; max-width: 100%; margin: 0; }
-  .hero-right { height: 320px; }
+  .hero-left { padding: 100px 20px 48px; max-width: 100%; margin: 0; }
+  .hero-right { height: 280px; }
   .hero-img-overlay { background: linear-gradient(to bottom, transparent 60%, rgba(13,27,42,0.4)); }
   .nav-links, .nav-cta { display: none; }
   .hamburger { display: flex; }
   .nav-inner { padding: 0 20px; }
-  .search-card { padding: 24px 20px; }
-  .search-grid { grid-template-columns: 1fr; }
+
+  /* Search card compacta en móvil */
+  .search-section { padding: 0 0 32px 0; }
+  .search-card { padding: 20px 16px; border-radius: 16px; }
+  .search-heading { font-size: 17px; margin-bottom: 16px; padding-bottom: 14px; }
+  .search-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+  .search-field label { font-size: 9px; margin-bottom: 5px; }
+  .search-field input,
+  .search-field select { padding: 9px 10px; font-size: 13px; }
+
   .footer-grid { grid-template-columns: 1fr; }
   .modal-detail { grid-template-columns: 1fr; }
 }
 @media (max-width: 480px) {
-  .hero-stats { gap: 24px; flex-wrap: wrap; }
+  .hero-stats { gap: 16px; flex-wrap: wrap; }
+  .stat-num { font-size: 28px; }
   .hero-actions { flex-direction: column; }
   .hero-actions .btn { width: 100%; justify-content: center; }
   .cta-buttons { flex-direction: column; align-items: center; }
+  /* Botón buscar full width pero más compacto */
+  #searchBtn { padding: 12px !important; font-size: 13px !important; }
 }
 </style>
 </head>
@@ -915,7 +927,7 @@ button { cursor: pointer; font-family: inherit; }
     </div>
   </div>
   <div class="hero-right">
-    <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=900&h=1200&fit=crop" alt="Casa familiar en San Rafael, Mendoza">
+    <img src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?w=900&h=1200&fit=crop" alt="Casa familiar en San Rafael, Mendoza">
     <div class="hero-img-overlay"></div>
     <div class="hero-img-badge">
       <p>Destacado del mes</p>
